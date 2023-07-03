@@ -697,6 +697,7 @@ border: none;
  
 }
 
+
   
 }
 
@@ -706,7 +707,11 @@ border: none;
     grid-template-columns: repeat(1, 1fr);
 
 }
+.hero-section{
+  padding-top: 10px;
 
+  
+}
 .searchBar form{
   margin-top: 30px;
   

@@ -19,7 +19,7 @@ body{
   background-color:#042247;
   color: #FFFFFF;
   padding: 25px;
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
@@ -430,7 +430,7 @@ footer a{
           background-color:#042247;
           color: #FFFFFF;
           padding: 25px;
-          display: flex;
+          display: none;
           transition: all 1s;
           flex-direction: column;
         padding: 10px;
@@ -444,7 +444,7 @@ footer a{
           position: relative;
           bottom:  25px;
           width: 100%;
-          display: block;
+          display: none;
           height: 7vh;
           cursor: pointer;
           

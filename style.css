@@ -19,7 +19,7 @@ body{
   background-color:#042247;
   color: #FFFFFF;
   padding: 25px;
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
@@ -436,9 +436,7 @@ footer a{
         padding: 10px;
           text-align: center;
         }
-        .remove{
-          display: none;
-        }
+       
         
         .menu-icon img{
           position: relative;

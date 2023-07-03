@@ -168,44 +168,6 @@ border: none;
   margin: auto;
   color: #00000E;
 }
-/* .hero-section{
-  
-} */
-  
-/* }
-.hero-section{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 30px;
-  height: 100vh
-}
-.hero-section img{
-  width: 100%;
-}
-.hero-section{
-  background-image: url(./img/about-banner-2.jpg);
-  opacity: 0.8;
-}
-.hero-section .leftContent h3{
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-.hero-section .leftContent p{
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.hero-section .leftContent button{
- background-color: hsl(9, 100%, 62%);
- border: 0;
- padding: 10px 30px;
- margin: 20px 0;
-}
-.hero-section .leftContent button a{
-  color: white;
-  font-size: 20px;
-  
-} */
 
 
 .about-us{
@@ -273,7 +235,6 @@ border: none;
 
 }
 .content{
-  /* background-color: white; */
   padding: 5px 10px;
   
 }
@@ -464,17 +425,63 @@ footer a{
        
         .main-nav{
           width: 100%;
+          box-shadow:  0 5px 20px 0 hsla(219, 56%, 21%, 0.1)
+                        0 16px 32px hsla(188, 63%, 7%, 0.1);
           background-color:#042247;
           color: #FFFFFF;
           padding: 25px;
-          display: none;
+          display: flex;
+          transition: all 1s;
           flex-direction: column;
-          justify-content: space-between;
+        padding: 10px;
           text-align: center;
-          overflow: hidden;
-      }
-        .main-nav a{
-          font-size: 15px;
+        }
+        .remove{
+          display: none;
+        }
+        
+        .menu-icon img{
+          position: relative;
+          bottom:  25px;
+          width: 100%;
+          display: block;
+          height: 7vh;
+          cursor: pointer;
+          
+          /* display: none; */
+        }
+        .menuBar{
+          position: relative;
+        
+        }
+        .menu-icon{
+          position: absolute;
+          top: 2rem;
+          right:20px;
+         
+        }
+        .main-nav .navbar{
+          padding-top: 10px;
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          
+        }
+        
+        .navbar li{
+         padding: 5px;
+         margin: auto
+        }
+        .navbar a{
+          color:#FFFFFF;
+          font-size: 14px;
+        }
+        .main-nav .log h3{
+          border: none;
+          padding: 2px;
+          color: #FFFFFF;
+          margin-bottom: 2px;
+          text-transform: uppercase;
          
         }
         .hero-section{

@@ -41,6 +41,11 @@ body{
   right:20px;
  
 }
+.icons{
+  box-shadow:  0 5px 20px 0 hsla(219, 56%, 21%, 0.1)
+  0 16px 32px hsla(188, 63%, 7%, 0.1);
+  cursor: pointer;
+}
 .main-nav .navbar{
   display: flex;
   flex-direction: row;
@@ -62,6 +67,40 @@ body{
   text-transform: uppercase;
  
 }
+#chatbox {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  margin: 0 auto;
+  padding: 10px;
+  display: none;
+}
+
+#chatlogs {
+  height: 80%;
+  margin-bottom: 10px;
+}
+
+#userInput {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Additional styling for chat messages */
+.user {
+  background-color: #DCF8C6;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.bot {
+  background-color: #F0F0F0;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
 .hero-section{
   height: 80vh;
   text-align: center;
@@ -266,15 +305,19 @@ border: none;
   grid-template-columns: repeat(2, 1fr);
 }
 .grid-container {
+  max-width: 90%;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
+  box-shadow: 0 4px 8px #fff;
 
 }
 .content{
-  /* background-color: white; */
-  padding: 5px 10px;
+  background-color: #042247;
+  padding: 10px 20px;
+  color: #fff;
   
 }
 
@@ -461,7 +504,7 @@ footer a{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
          width: 100%;
-         gap: 10px;
+         gap: 20px;
          padding: 0;
           
        
@@ -501,6 +544,30 @@ footer a{
         .searchBar form{
           margin-top: 2px;
           
+      }
+      .main-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding-right: 20px;
+      text-align: center;
+      margin-bottom: 30px; */
+      }
+      .news-letter{
+        margin-top: 20px;
+      }
+      #email{
+       outline: none;
+       width: 60%;
+      
+      }
+      #subscribe{
+        border-radius: 0;
+        outline: none;
+      }
+      .follow{
+        margin-top: 20px;
+        padding: 10px;
+        cursor: pointer;
       }
       .searchBar #keyword{
           background-color: #042247;
@@ -582,9 +649,5 @@ footer a{
           color: #ff3030;
           
       }
-      .main-footer{
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-         
-        }      
+           
     }

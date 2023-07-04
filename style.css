@@ -384,9 +384,11 @@ footer a{
 .follow{
   padding-top: 10px;
 }
+
+
    /*MOBILE RESPONDIVE WITH THE NAVBAR*/
  
-   @media (width < 600px) {
+   @media (max-width: 600px) {
       /* CSS rules specific to smaller screens */
       body {
         font-size: 14px;
